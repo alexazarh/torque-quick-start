@@ -28,6 +28,10 @@ infrastructure:
       - port_info:
           port: $port_number
 
+  # permissions:
+  #   aws:
+  #     iam_instance_profile: INSTANCE_PROFILE_NAME
+
 configuration:
   initialization:
     script: init.sh

@@ -1,0 +1,34 @@
+spec_version: 1
+kind: blueprint
+
+metadata:
+  description: Blueprint that deploys an applications in AWS to a private sandbox
+
+
+clouds:
+  - AWS 1: eu-west-1
+
+inputs:
+  - advanced_app_port: 1234
+  - aws:PermissionsBoundary: 'arn:aws:iam::XXX:policy/XXX_permission_boundary'
+    
+applications:
+  - advanced-app:
+      instances: 1
+      input_values:
+        - port_number : $advanced_app_port
+
+debugging:
+  availability: disabled
+
+infrastructure:
+  connectivity:
+    virtual_network:
+        id: vpc-XXX
+        subnets:
+          management:
+          - subnet-XXX
+          application:
+          - subnet-XXX
+          - subnet-XXX
+  
