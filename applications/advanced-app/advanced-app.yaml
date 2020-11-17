@@ -4,9 +4,12 @@ kind: application
 source:
   os_type: linux
   image:
-    ami:                                                   # AWS Image
-      - id: ami-f90a4880
+    ami:                                                   # AWS Image ubuntu 16
+      - id: ami-09b9e380df60300c8
         region: eu-west-1
+        username: ubuntu
+      - id: ami-008b09448b998a562
+        region: us-west-2
         username: ubuntu
     azure_image:                                           # Azure Image
       - urn: Canonical:UbuntuServer:16.04-LTS:latest
