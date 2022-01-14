@@ -6,7 +6,7 @@ metadata:
 
 
 clouds:
-  - AWS 1: eu-west-1
+  - AWS: eu-west-1
 
 inputs:
   - advanced_app_port: 1234
