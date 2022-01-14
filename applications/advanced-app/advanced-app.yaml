@@ -8,7 +8,7 @@ source:
       - id: ami-0f98dee1f489edb2b
         region: eu-west-1
         username: root
-      - id: ami-0774f5100fbd158de
+      - id: ami-04d6bd0d7f6f5bdc3
         region: us-west-2
         username: ubuntu
     azure_image:                                           # Azure Image
