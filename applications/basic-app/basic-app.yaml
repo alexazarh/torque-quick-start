@@ -5,7 +5,7 @@ source:
   os_type: linux
   image:
     ami:                                                   # AWS Image Ubuntu 18
-      - id: ami-0f98dee1f489edb2b
+      - id: ami-05adb33b4b458b0af
         region: eu-west-1
         username: ubuntu
       - id: ami-04d6bd0d7f6f5bdc3
