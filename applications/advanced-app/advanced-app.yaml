@@ -7,6 +7,9 @@ source:
     ami:                                                   # AWS Image
       - id: ami-0f98dee1f489edb2b
         region: eu-west-1
+        username: root
+      - id: ami-0774f5100fbd158de
+        region: us-west-2
         username: ubuntu
     azure_image:                                           # Azure Image
       - urn: Canonical:UbuntuServer:16.04-LTS:latest
