@@ -11,13 +11,11 @@ kind: blueprint
 metadata:
   description: Blueprint that deploys two applications in AWS
 
-
 clouds:
   - AWS: eu-west-1
 
 inputs:
   - advanced_app_port: 1234
-
 
 applications:
   - basic-app:

@@ -4,11 +4,11 @@ kind: application
 source:
   os_type: linux
   image:
-    ami:                                                   # AWS Image Ubuntu 16
-      - id: ami-09b9e380df60300c8
+    ami:                                                   # AWS Image Ubuntu 18
+      - id: ami-0f98dee1f489edb2b
         region: eu-west-1
         username: ubuntu
-      - id: ami-008b09448b998a562
+      - id: ami-0774f5100fbd158de
         region: us-west-2
         username: ubuntu
     azure_image:                                           # Azure Image

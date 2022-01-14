@@ -5,7 +5,7 @@ set -e      # Stop Script on Error
 
 
 # For Debugging (print env. variables into a file)
-printenv > /var/log/colony-vars-"$(basename "$BASH_SOURCE" .sh)".txt
+printenv > /var/log/torque-vars-"$(basename "$BASH_SOURCE" .sh)".txt
 
 echo "Updating System"
 apt-get update -y

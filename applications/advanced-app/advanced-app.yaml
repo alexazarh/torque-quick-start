@@ -4,11 +4,11 @@ kind: application
 source:
   os_type: linux
   image:
-    ami:                                                   # AWS Image ubuntu 16
-      - id: ami-09b9e380df60300c8
+    ami:                                                   # AWS Image ubuntu 18.04
+      - id: ami-0f98dee1f489edb2b
         region: eu-west-1
-        username: ubuntu
-      - id: ami-008b09448b998a562
+        username: root
+      - id: ami-0774f5100fbd158de
         region: us-west-2
         username: ubuntu
     azure_image:                                           # Azure Image
@@ -30,6 +30,10 @@ infrastructure:
     external:
       - port_info:
           port: $port_number
+
+  # permissions:
+  #   aws:
+  #     iam_instance_profile: INSTANCE_PROFILE_NAME
 
 configuration:
   initialization:
