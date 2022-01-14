@@ -2,7 +2,7 @@
 #    - basic_app - a simple 1 instance VM from an image
 #    - advanced_app - 2 VMs with a loadbalancer, configured with custom scripts with user inputs
 #
-#    https://colonysupport.quali.com/hc/en-us/articles/360001632548-The-Blueprint-YAML-File
+#    https://community.qtorque.io/developing-blueprints-61/the-blueprint-yaml-file-part-1-307
 #
 ---
 spec_version: 1

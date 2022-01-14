@@ -19,7 +19,7 @@ applications:
         - port_number : $advanced_app_port
 
 debugging:
-  availability: disabled
+  bastion_availability: enabled-off
 
 infrastructure:
   connectivity:
